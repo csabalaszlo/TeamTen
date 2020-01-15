@@ -1,5 +1,5 @@
 const changeFontSize = (incr) => {
-  $("div").children().each(function () {
+  $("#buttons").children().each(function () {
     var fontSize = parseInt($(this).css('font-size'), 10);
     fontSize += incr;
     $(this).css('font-size', fontSize + 'px');
@@ -51,14 +51,14 @@ $(document).ready(function () {
   })
 
 
-  
+
    $("#chat-button").click(() => {
     if(isCityHall === "true"){
       window.location.href="chat_hall.html";
      }else{
        window.location.href="chat_mobile.html";
      }
-      
+
    })
     $("#make-poll-button").click(() => {
       if(isCityHall === "true"){
@@ -69,4 +69,3 @@ $(document).ready(function () {
    })
 
 })
-
