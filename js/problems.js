@@ -70,7 +70,7 @@ $(document).ready(function(){
       location = "Gruia";
       priority = "HIGH";
       upvotes = "0";
-      completed = "60";
+      completed = "0";
 
       own = `
       <div class="form-group">
