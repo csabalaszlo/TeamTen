@@ -1,9 +1,18 @@
+var changed = false;
+
 const changeFontSize = (incr) => {
   $("#buttons").children().each(function () {
-    var fontSize = parseInt($(this).css('font-size'), 10);
-    fontSize += incr;
-    $(this).css('font-size', fontSize + 'px');
-  })
+    if(changed){
+      $(this).css('font-size', '16px');
+   }else{
+       $(this).css('font-size', '18px');
+   }
+ });
+ if(changed){
+   changed = false;
+ }else{
+   changed = true;
+ }
 }
 
 $(document).ready(function () {
