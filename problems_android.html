@@ -146,12 +146,29 @@
 			</div>
 		</div>
 
+		<!-- Modal -->
+<div class="modal fade" id="nearby-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Nearby Problems</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div id="more-body" class="modal-body">
+					<img src="./images/map.PNG" width="300" height="300" alt="Girl in a jacket">
+			</div>
+		</div>
+	</div>
+</div>
+
 
 	</div>
 							<button id="submit-problem-button" class="btn btn-info btn-user btn-block" data-toggle="modal" data-target="#submit-problem-modal">
 								Submit problem
 							</button>
-							<button id="find-nearby-problem-button" class="btn btn-info btn-user btn-block">
+							<button id="find-nearby-problem-button" class="btn btn-info btn-user btn-block" data-toggle="modal" data-target="#nearby-modal">
 								Find nearby problem
 							</button>
 								<div  class="btn  btn-block">  </div>
