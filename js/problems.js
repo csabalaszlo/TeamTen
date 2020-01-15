@@ -75,7 +75,7 @@ $(document).ready(function(){
       own = `
       <div class="form-group">
        <input id="change-priority-input" type="number" name="quantity" min="0" max="100" class="form-control form-control-sm" id="problem-location" rows="1"/>
-       <button id="change-priority-btn" type="button" class="btn btn-info">Change priority</button>
+       <button id="change-priority-btn" type="button" class="btn btn-info">Change progess</button>
       </div>
       `;
     }
